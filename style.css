@@ -1,0 +1,28 @@
+.no-contributions {
+  background-color: #ffffff;
+}
+.low-contributions {
+  background-color: #8ad4f4;
+}
+.medium-contributions {
+  background-color: #30a1c7;
+}
+.high-contributions {
+  background-color: #2089bd;
+}
+.max-contributions {
+  background-color: #134d84;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
