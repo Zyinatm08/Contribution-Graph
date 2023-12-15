@@ -1,16 +1,16 @@
 fetch("https://dpg.gg/test/calendar.json")
   .then((response) => response.json())
   .then((data) => {
-    processDataAndBuildChart(data);
+    processData(data);
   })
   .catch((error) => console.error("Ошибка:", error));
 
-function processDataAndBuildChart(data) {
+function processData(data) {
   const currentDate = new Date();
   const startDate = new Date(currentDate);
   startDate.setDate(currentDate.getDate() - 50 * 7);
 
-  const chartContainer = document.getElementById("chart-container");
+  const graphContainer = document.getElementById("graph-container");
 
   const table = document.createElement("table");
 
@@ -58,5 +58,5 @@ function processDataAndBuildChart(data) {
     table.appendChild(row);
   }
 
-  chartContainer.appendChild(table);
+  graphContainer.appendChild(table);
 }
